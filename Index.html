@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="text.css">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Happy Birthday</title>
+    <link rel="icon" href="image/mars-icon.jpg">
+     
+</head>
+<body id="home">
+    <header>
+        <div id="nav-bar" >
+            <img class="logo" src="image\marslogo.png" height="50px" width="auto" alt="logo"></div> 
+            <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+        </div>
+       
+        <nav class="" >
+            <ul>
+                <li><a href="#home" class="inactive-nav">HOME</a></li>
+                <li><a href="#about" class="inactive-nav">PICTURE</a></li>
+                <li><a href="#contact" class="inactive-nav">CONTACT</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <section class="home" >
+        <div class="media-toggle"><i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+        <div class="social-media-sb">
+            <a href="#"><i class="fa fa-facebook"> </i></a> 
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+            <a href="#"><i class="fa fa-print"></i></a>
+            <a href="#"><i class="fa fa-plus"></i></a> 
+        </div>
+            <h3 class="header-title">HI Irence Cabacungan
+                <br>Happy 18th Birthday
+            </h3>
+            <img class="header-image" src="image\pic1.jpg" alt="logo-pic">
+    </section>
+    <div class="title" id="about">PICTURE</div>
+    <section class="about" >
+            <div class="about-pic">
+                <div class="about-picture">
+                    <a class="next" onclick="plusSlides(1)"> &#10095;</a>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <div class="mySlides">
+                        <h3 class="numbertext">1 / 5</h3>
+                        <img class="slide-pic" src="image/slide1.jpg" >
+                    </div>
+                    <div class="mySlides">
+                        <h3 class="numbertext">2 / 5</h3>
+                        <img class="slide-pic" src="image/slide2.jpg" >
+                    </div>
+                    <div class="mySlides ">
+                        <h3 class="numbertext">3 / 5</h3>
+                        <img class="slide-pic" src="image/slide3.jpg" >
+                    </div>
+                    <div class="mySlides">
+                        <h3 class="numbertext">4 / 5</h3>
+                        <img class="slide-pic" src="image/slide4.jpg" >
+                    </div>
+                    <div class="mySlides">
+                        <h3 class="numbertext">5 / 5</h3>
+                        <img class="slide-pic" src="image/slide5.jpg" >
+                    </div>
+                    <div class="dot-box">
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                    </div>
+                </div>
+            </div>  
+            <div class="about-profile">
+                <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
+            </div>       
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+
+@media (max-width: 632px){
+    *body{
+        margin: 0;
+        padding: 0;
+        width: auto;
+    }
+    
+    header{
+        padding: 0 40px;
+        
+    }
+    .menu-toggle{
+        display: block;
+    }
+    header nav{
+        position: absolute ;
+        width: 100%;
+        background-color: rgb(245, 245, 245);
+        top: 50px;
+        left: -100%;
+        transition: 1.5s;
+    }
+    header nav.active{
+        left: 0 ;
+        background-color: rgba(128, 128, 128, 0.932);
+    
+    }
+    header nav ul{
+        display: block;
+        text-align: center;
+    } 
+    header nav ul li a{
+        border-bottom: 2px solid rgba(0, 0, 0, 0.432);
+    }
+    .media-toggle{
+        display: block; 
+    }
+    .home{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: flex-end;
+              
+    }
+    .header-title{
+        font-size: 25px;
+        width: auto;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        margin: 0;
+
+    }
+    .header-image{
+        height: auto;
+        width: 130px;
+    }
+    .about{
+        flex-direction: column;
+        width: 100vw;
+        height: 94vh;
+        
+    }
+    .about-pic{
+        position: relative;
+        display: inline-flex;
+        justify-content: center;
+        margin: 0;
+        width: 100vw;
+        height: 54vh;
+    }
+    .about-picture{
+        height: auto;
+        display: flex;
+        width: 355px;
+        height: 250px;
+    }
+    .about-profile{
+        width: 100vw;
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        font-size: 15px;
+    }
+    .mySlides{
+        height: 250px;
+        width: 355px;
+    }
+    .slide-pic{
+        height: 100%;
+        max-width: 100%;
+    }
+    .prev, .next{
+        display: block;
+        position: absolute;
+    }
+    .prev{
+        
+        padding: 110px 0px 110px 10px;
+        margin-left: 30px;
+        
+    }
+    .next{
+        right: 0;
+        padding: 110px 0px 110px 10px;
+        margin-left: 0px;
+    }
+    .numbertext {
+        top: 0;
+        left: 0;
+    }
+    .dot {
+        width: 5px;
+        height: 5px;
+        padding: 5px;
+        z-index: 10;
+        top: 0px;
+    }
+    .about-profile{
+        width:100vw;
+        height: 30vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: static;
+    }
+    .console-container {
+            font-size: auto;
+            width: 150px;
+            height: auto;
+            text-align:center;
+            display:flex;
+            justify-content: flex-start;
+            color:white;
+            margin:auto;
+    }
+    .console-underscore {
+            display:inline-block;
+            position:relative;
+    }
+}

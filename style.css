@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  
+}
+header{
+    padding: 0px 50px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+header nav.active{
+    background-color: black;
+}
+header nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+header nav ul li{
+    list-style: none;
+} 
+header nav ul li a{
+    text-decoration: none;
+    font-size: 23px,auto;
+    padding: 0px 20px;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    
+}
+header nav ul li a:hover{
+    color: black;
+    background-color: rgb(25, 136, 211);
+}
+.menu-toggle{
+    color: white;
+    float: right;
+    line-height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+/* title */
+.title{
+  
+    height: 6vh;
+    width: 100vw;
+    right: 0;
+    left: 0;
+    font-size: 2rem;
+    text-align: center; 
+    position: relative;  
+}
+/* home 0ne */
+.home{
+    width: 100vw;
+    height: 90vh;
+    background-image: url("image/nav.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0px 50px;
+    display: flex;
+    position: relative;
+    justify-content: center;  
+    
+}
+.header-title{
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 100px;
+    margin-right: 150px;
+    font: 3rem 'Fredoka One', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.35rem;
+    color: #000000;
+    text-shadow: 1px -1px 0 #ad1c9a, 1px 1px 0 rgb(63, 240, 142), -1px 0px 0 rgba(101, 240, 245, 0.651);
+}
+.header-image{
+    width: auto;
+    height: 210px;
+    border-radius: 15%;
+    margin-top: 50px;
+}
+.media-toggle{
+    cursor: pointer;
+    position: absolute;
+    top:30%;
+    left: -30px;
+    
+}
+.media-toggle:hover{
+    left: 0;
+}
+.social-media-sb{
+    position: absolute;
+    top:36%;
+    left:-60px;
+    display: flex;
+    flex-direction: column;
+    transition: all 1s ease-in-out;
+}
+.fa {
+    padding: 15px 10px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 2px;
+}
+.fa-arrow-right{    
+    background-color: white;
+    color: red;
+    font-size: 25px;
+    
+}
+.fa-facebook{
+    background: #3256a3;
+    color: white;
+  }
+.fa-twitter{
+    background: #55ACEE;
+    color: white;
+}
+.fa-print{
+    background-color: grey;
+    color: white;
+}
+.fa-youtube{
+    background-color: rgb(136, 9, 9);
+    color: white;
+}
+.fa-plus{
+    background-color: rgb(153, 147, 147);
+    color: white;
+}
+.sidebar-active{
+    left: 0;
+}
+/* About */
+.block2{
+    padding: 5px;
+}
+.about{
+    background-image: url("image/background2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover ;
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.hidden {
+    opacity:0;
+}
+.about-pic{
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+}
+.about-picture{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    height: auto;
+}
+.slide-pic{
+    margin: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.mySlides {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.prev, .next {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    width: 50px;
+    margin: 0;
+    color: white;
+    font-weight: bold;
+    font-size:20px;
+    z-index: 1;
+}
+.prev{
+    padding: 80px 0px 80px 10px;
+    left: 0px;
+}
+.next:hover ,.prev:hover {
+    background-color: rgba(128, 128, 128, 0.123);
+}
+.next{
+    padding: 80px 0px 80px 25px;
+    right: 0px;
+}
+.numbertext {
+    color: #ffffff;
+    text-shadow: black 1px 1px 0px;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    z-index: 2;
+}
+.dot-box{
+    position: absolute;
+    display: inline-flex;
+    bottom: 10px;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: flex;
+    position: relative;
+    z-index: 1;
+
+  }
+  .active, .dot:hover {
+    background-color: #717171;
+}
+.about-profile{
+    width: 40vw;
+    height: 100%;
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+.console-container {
+    position: relative;
+    font-size:2em;
+    text-align:center;
+    height:200px;
+    width:auto;
+    display:block;
+    color:white;
+    margin:auto;
+}
+.console-underscore {
+    display:inline-block;
+    position:relative;
+    top:-0.14em;
+    left:10px;
+}
